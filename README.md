@@ -1,7 +1,8 @@
+@"
 # Dockyard Acoustics — Streamlit Site
-Minimal site for Dockyard Acoustics (PMV · CVR: 45796256).
+PMV · CVR: 45796256
 
-## Run locally
-```bash
-pip install -r requirements.txt
-streamlit run app.py
+Run:
+  pip install -r requirements.txt
+  streamlit run app.py
+"@ | Set-Content README.md
