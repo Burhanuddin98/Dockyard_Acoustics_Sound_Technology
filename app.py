@@ -4,6 +4,8 @@
 #   streamlit run app.py
 import smtplib, ssl
 from email.message import EmailMessage
+import streamlit.components.v1 as components
+
 # app.py — Dockyard Acoustics (minimal + email leads)
 
 import re
@@ -96,6 +98,17 @@ def send_lead_email(row: dict) -> tuple[bool, str]:
         return True, "Lead emailed"
     except Exception as e:
         return False, str(e)
+def goto_tab(tab_label: str):
+    # Click the Streamlit tab whose label matches tab_label (case-insensitive)
+    components.html(f"""
+    <script>
+    setTimeout(function(){{
+      const tabs = Array.from(window.parent.document.querySelectorAll('button[role="tab"]'));
+      const t = tabs.find(el => el.innerText.trim().toLowerCase() === "{tab_label.lower()}");
+      if (t) t.click();
+    }}, 0);
+    </script>
+    """, height=0, width=0)
 
 # ---------------------------
 # Layout
@@ -116,7 +129,9 @@ with Home:
         st.write(
             "True Wireless Stereo (TWS), rechargeable, and able to estimate the Room Impulse Response (RIR) to auto‑tune for optimum performance."
         )
-        st.markdown(f"<a class='btn btn-primary' href='#contact'>Contact</a> ", unsafe_allow_html=True)
+        if st.button("Contact", type="primary"):
+            goto_tab("Contact")
+
     st.divider()
 
     a, b, c = st.columns(3)
