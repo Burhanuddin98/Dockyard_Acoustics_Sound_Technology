@@ -4,8 +4,9 @@
 #   streamlit run app.py
 import smtplib, ssl
 from email.message import EmailMessage
+# app.py — Dockyard Acoustics (minimal + email leads)
 
-from __future__ import annotations
+import re
 import streamlit as st
 import pandas as pd
 from pathlib import Path
