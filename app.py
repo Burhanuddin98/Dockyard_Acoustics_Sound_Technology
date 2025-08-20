@@ -150,7 +150,14 @@ with Contact:
                 st.success("Thanks! Your message has been recorded.")
 
     # Admin view (toggle with secrets)
-    if st.secrets.get("SHOW_LEADS", "0") == "1":
+    # Admin view (toggle without breaking if secrets missing)
+    show_leads = False
+    try:
+        show_leads = st.secrets.get("SHOW_LEADS", "0") == "1"
+    except Exception:
+        show_leads = False
+
+    if show_leads:
         st.markdown("#### Leads (private)")
         leads = Path("leads.csv")
         if leads.exists():
