@@ -1,19 +1,9 @@
-# Python
 __pycache__/
 *.py[cod]
-*.egg-info/
-
-# Editors
 .vscode/
 .idea/
-
-# OS
 .DS_Store
 Thumbs.db
-
-# App data
 uploads/
 leads.csv
-
-# Streamlit
 .streamlit/secrets.toml
