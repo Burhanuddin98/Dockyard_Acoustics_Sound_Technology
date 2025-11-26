@@ -180,7 +180,7 @@ with Contact:
             company = st.text_input("Company")
         with col2:
             topic = st.selectbox("Topic", [
-                "Self‑tuning TWS speaker",
+                "Diffraction-Physics Room Acoustics Engine",
                 "Acoustic simulation",
                 "Audio DSP / ML",
                 "Measurement & QA",
