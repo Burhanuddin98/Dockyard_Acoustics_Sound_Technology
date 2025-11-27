@@ -125,7 +125,7 @@ with Home:
             st.image(str(LOGO_PATH), width=130)
     with c2:
         st.markdown("## Dockyard Acoustics Sound Technology")
-        st.markdown("<h2 style=\"margin:.1rem 0 .6rem 0\">State of the art Acoustic Simulation Software</h2>", unsafe_allow_html=True)
+        st.markdown("<h3 style=\"margin:.1rem 0 .6rem 0\">State of the art Acoustic Simulation Software</h3>", unsafe_allow_html=True)
         st.write("Dockyard Acoustics is redefining how enthusiasts and professionals shape sound. Our Diffraction-Physics Room Acoustics Engine uses advanced, next-generation physics to deliver acoustic simulations with unprecedented speed, accuracy, and reliability. A all-in-one highly intuitive and portable platform.")
         st.write("We empower architects, acoustic consultants, and engineers to design and optimize acoustic environments with confidence. From early-stage concepts to final design refinement.")
         st.write("Dockyard Acoustics makes powerful acoustic analysis accessible, efficient, and effortless.")
