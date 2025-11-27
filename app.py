@@ -125,9 +125,11 @@ with Home:
             st.image(str(LOGO_PATH), width=130)
     with c2:
         st.markdown("### Dockyard Acoustics Sound Technology")
-        st.markdown("<h1 style=\"margin:.1rem 0 .6rem 0\">Self‑tuning wireless speakers</h1>", unsafe_allow_html=True)
+        st.markdown("<h1 style=\"margin:.1rem 0 .6rem 0\">State of the art Acoustic Simulation Software</h1>", unsafe_allow_html=True)
         st.write(
-            "True Wireless Stereo (TWS), rechargeable, and able to estimate the Room Impulse Response (RIR) to auto‑tune for optimum performance."
+            "Dockyard Acoustics is redefining how enthusiasts and professionals shape sound. Our Diffraction-Physics Room Acoustics Engine uses advanced, next-generation physics to deliver acoustic simulations with unprecedented speed, accuracy, and reliability. A all in one highly intuitive and portable platform.
+We empower architects, acoustic consultants, and engineers to design and optimize acoustic environments with confidence. From early-stage concepts to final design refinement.
+Dockyard Acoustics makes powerful acoustic analysis accessible, efficient, and effortless."
         )
         if st.button("Contact", type="primary"):
             goto_tab("Contact")
@@ -144,7 +146,10 @@ with Home:
 # ---------------------------
 with About:
     st.markdown("### About")
-    st.write("We build self‑tuning TWS speakers and collaborate with select teams on acoustics/DSP/ML.")
+    st.write("Dockyard Acoustics develops advanced simulation technologies designed to bring next-generation accuracy, speed, and usability to acoustic and physical modelling. 
+Our core product is a state-of-the-art Diffraction Physics Engine that enables precise room-acoustic simulation and forms the foundation for future expansion into CFD and broader physics-based applications.
+Beyond software, we offer tailored solutions and consultancy, adapting our engine to specific industry needs or building custom tools for unique challenges. Our interdisciplinary expertise spans Mechanical, Structural, Embedded Systems, and Acoustics Engineering, allowing us to deliver high-performance, science-driven solutions for architects, industry partners, and engineering teams seeking deeper insight and better design outcomes.
+At Dockyard Acoustics, we turn complex physics and acoustics into accessible, powerful tools that elevate engineering workflows and enable better environments one simulation at a time.")
     left, right = st.columns([2,1])
     with left:
         st.markdown("#### Team")
