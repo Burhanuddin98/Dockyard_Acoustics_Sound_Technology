@@ -164,8 +164,24 @@ At Dockyard Acoustics, we turn complex physics and acoustics into accessible, po
 # PROJECTS
 # ---------------------------
 with Projects:
-    st.markdown("### Projects & Updates")
-    st.write("For now, see ongoing work on LinkedIn.")
+    st.markdown("### Building the Future of Acoustic Simulation")
+    st.write(""" 
+    At Dockyard Acoustics, we believe advanced scientific tools shouldn’t be reserved only for scientists.
+    Acoustic simulation should be intuitive, visual, and accessible, whether you’re an architect, designer, engineer, or simply someone passionate about sound.
+    We’ve been pushing the boundaries of what room-acoustic software can do.
+    """)
+    
+    st.markdown("### Sound You Can See")
+    st.write("""
+    We’ve transformed the invisible physics of acoustics into something you can see, interact with, and understand at a glance. 
+    From modal fields to toroidal rooms and multi-room simulations, our visualizations reveal:
+    - Where energy builds and collapses
+    - How resonances shift with design changes
+    - How sound "breathes" inside a space
+    These are real wave-physics outputs driven by Green’s Functions, hybrid solvers, and GPU-accelerated rendering.
+    Each glowing volume, isosurface, and neon resonance comes directly from the underlying physics.
+    """)
+    st.write("For more, see ongoing work on LinkedIn.")
     st.link_button("LinkedIn — @bisdansk", LINKEDIN_URL, use_container_width=False)
 
 # ---------------------------
