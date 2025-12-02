@@ -138,7 +138,7 @@ with Home:
         - Acoustics & Computational Physics
         From bespoke simulations to full engine integrations, we can adapt our technology to your company, workflow, or product.
         """)
-    if st.button("Contact", type="primary"):
+        if st.button("Contact", type="primary"):
             goto_tab("Contact")
 
     st.divider()
@@ -188,7 +188,7 @@ with Projects:
     We’ve been pushing the boundaries of what room-acoustic software can do.
     """)
     
-    st.markdown("## Powerful Sound Visualization")
+    st.markdown("#### Powerful Sound Visualization")
     st.write("""
     We’ve transformed the invisible physics of acoustics into something you can see, interact with, and understand at a glance. 
     From modal fields to toroidal rooms and multi-room simulations, our visualizations reveal:
@@ -198,7 +198,7 @@ with Projects:
     These are real wave-physics outputs driven by Green’s Functions, hybrid solvers, and GPU-accelerated rendering.
     Each glowing volume, isosurface, and neon resonance comes directly from the underlying physics.
     """)
-    st.markdown("## Breakthroughs in Our Physics Engine")
+    st.markdown("#### Breakthroughs in Our Physics Engine")
     st.write("""
     Our diffraction-first acoustics engine has rapidly evolved into a hybrid system capable of handling:
     - Arbitrary, asymmetric geometry
@@ -210,7 +210,7 @@ with Projects:
     - Interactive parameter controls
     Our newest release simulates larger rooms, higher resolutions, and denser modal sums, all with smooth, responsive UI.
     """)
-    st.markdown("## Your Room, Your Model, Your Sound")
+    st.markdown("#### Your Room, Your Model, Your Sound")
     st.write("""
     We’re building tools that let anyone “listen to their design” before it exists:
     1. Upload a 3D model → pick materials → simulate
@@ -219,7 +219,6 @@ with Projects:
     - Full impulse responses (IRs)
     - Spectrograms (dry, wet, convolved audio)
     - Ray-based path visualizations
-
     2. or simply record your room on your phone
     - Clap / sweep → upload WAV → receive:
     - Per-octave RT60 analysis
@@ -230,7 +229,7 @@ with Projects:
 All designed to help consultants, architects, and engineers solve acoustic problems faster.
 
     """)
-    st.markdown("## Physics + AI = Instant Acoustic Insight")
+    st.markdown("#### Physics + AI = Instant Acoustic Insight")
     st.write("""
     We’re also experimenting with Physics-Informed Neural Networks (PINNs) to model 2D and 3D fields instantly, without meshing:
     - Interactive sliders
@@ -240,7 +239,7 @@ All designed to help consultants, architects, and engineers solve acoustic probl
     - Export to VTK or NumPy
     It’s like a virtual lab: perfect for rapid prototyping, teaching, and design exploration.
     """)
-    st.markdown("## What’s Next?")
+    st.markdown("#### What’s Next?")
     st.write("""
     We’re continuing to expand into:
     - Computational Fluid Dynamics (CFD)
