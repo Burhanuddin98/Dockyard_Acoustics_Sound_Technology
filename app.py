@@ -210,7 +210,7 @@ with Projects:
     - Interactive parameter controls
     Our newest release simulates larger rooms, higher resolutions, and denser modal sums, all with smooth, responsive UI.
     """)
-    st.markdown("## Your Room, Your Model, Your Sound)
+    st.markdown("## Your Room, Your Model, Your Sound")
     st.write("""
     We’re building tools that let anyone “listen to their design” before it exists:
     1. Upload a 3D model → pick materials → simulate
