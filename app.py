@@ -119,7 +119,7 @@ Home, About, Projects, Contact = st.tabs(["Home", "About", "Projects", "Contact"
 # HOME
 # ---------------------------
 with Home:
-    c1, c2, c3 = st.columns([1,3])
+    c1, c2, c3 = st.columns([1,4])
     with c1:
         if LOGO_PATH.exists():
             st.image(str(LOGO_PATH), width=130)
