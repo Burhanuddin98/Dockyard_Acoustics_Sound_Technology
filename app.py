@@ -240,7 +240,7 @@ All designed to help consultants, architects, and engineers solve acoustic probl
     - Export to VTK or NumPy
     It’s like a virtual lab: perfect for rapid prototyping, teaching, and design exploration.
     """)
-    st.markdown("## What’s Next?)
+    st.markdown("## What’s Next?")
     st.write("""
     We’re continuing to expand into:
     - Computational Fluid Dynamics (CFD)
