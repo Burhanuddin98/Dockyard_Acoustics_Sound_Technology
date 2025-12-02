@@ -119,7 +119,7 @@ Home, About, Projects, Contact = st.tabs(["Home", "About", "Projects", "Contact"
 # HOME
 # ---------------------------
 with Home:
-    c1, c2, c3 = st.columns([1,4])
+    c1, c2 = st.columns([1,3])
     with c1:
         if LOGO_PATH.exists():
             st.image(str(LOGO_PATH), width=130)
@@ -129,7 +129,6 @@ with Home:
         st.write("Dockyard Acoustics is redefining how enthusiasts and professionals shape sound. Our Diffraction-Physics Room Acoustics Engine uses advanced, next-generation physics to deliver acoustic simulations with unprecedented speed, accuracy, and reliability. A all-in-one highly intuitive and portable platform.")
         st.write("We empower architects, acoustic consultants, and engineers to design and optimize acoustic environments with confidence. From early-stage concepts to final design refinement.")
         st.write("Dockyard Acoustics makes powerful acoustic analysis accessible, efficient, and effortless.")
-    with c3:
         st.markdown("### Custom Development & Engineering Expertise")
         st.write("""
         Dockyard Acoustics also provides custom simulation tools and consultancy, combining deep expertise in:
