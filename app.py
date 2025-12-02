@@ -129,6 +129,15 @@ with Home:
         st.write("Dockyard Acoustics is redefining how enthusiasts and professionals shape sound. Our Diffraction-Physics Room Acoustics Engine uses advanced, next-generation physics to deliver acoustic simulations with unprecedented speed, accuracy, and reliability. A all-in-one highly intuitive and portable platform.")
         st.write("We empower architects, acoustic consultants, and engineers to design and optimize acoustic environments with confidence. From early-stage concepts to final design refinement.")
         st.write("Dockyard Acoustics makes powerful acoustic analysis accessible, efficient, and effortless.")
+            st.markdown("### Custom Development & Engineering Expertise")
+    st.write("""
+    Dockyard Acoustics also provides custom simulation tools and consultancy, combining deep expertise in:
+    - Mechanical Engineering
+    - Structural Engineering
+    - Embedded Systems
+    - Acoustics & Computational Physics
+    From bespoke simulations to full engine integrations, we can adapt our technology to your company, workflow, or product.
+    """)
         if st.button("Contact", type="primary"):
             goto_tab("Contact")
 
@@ -148,12 +157,20 @@ with About:
     Dockyard Acoustics develops advanced simulation technologies designed to bring next-generation accuracy, speed, and usability to acoustic and physical modelling. 
 Our core product is a state-of-the-art Diffraction Physics Engine that enables precise room-acoustic simulation and forms the foundation for future expansion into CFD and broader physics-based applications.
 Beyond software, we offer tailored solutions and consultancy, adapting our engine to specific industry needs or building custom tools for unique challenges. Our interdisciplinary expertise spans Mechanical, Structural, Embedded Systems, and Acoustics Engineering, allowing us to deliver high-performance, science-driven solutions for architects, industry partners, and engineering teams seeking deeper insight and better design outcomes.
-At Dockyard Acoustics, we turn complex physics and acoustics into accessible, powerful tools that elevate engineering workflows and enable better environments one simulation at a time. """)
+At Dockyard Acoustics, we turn complex physics and acoustics into accessible, powerful tools that elevate engineering workflows and enable better environments one simulation at a time. 
+    """)
+    st.markdown("### Why Dockyard Acoustics")
+    st.write("""
+    Behind the code is a simple belief:
+    Powerful tools should be accessible — not locked behind complexity.
+    We’re creating an engine that architects, designers, consultants, and enthusiasts can use without needing a PhD in acoustics. A tool that demystifies sound, accelerates workflows, and reveals what the ear can’t see.
+    And along the journey, we’re grateful for the support of the engineering community. Every connection, question, and conversation has helped shape where this technology is heading.
+    """)
     left, right = st.columns([2,1])
     with left:
         st.markdown("#### Team")
         st.write("- **Burhanuddin Ibrahim Sakarwala** — Co‑founder & CTO (Acoustics/DSP/ML) · [LinkedIn](%s)" % LINKEDIN_URL)
-        st.info("Add your co‑founder here once details are final.")
+       # st.info("Add your co‑founder here once details are final.")
     with right:
         st.markdown("#### Company & Legal")
         st.write(COMPANY_ADDR)
@@ -171,7 +188,7 @@ with Projects:
     We’ve been pushing the boundaries of what room-acoustic software can do.
     """)
     
-    st.markdown("### Sound You Can See")
+    st.markdown("## Powerful Sound Visualization")
     st.write("""
     We’ve transformed the invisible physics of acoustics into something you can see, interact with, and understand at a glance. 
     From modal fields to toroidal rooms and multi-room simulations, our visualizations reveal:
@@ -180,6 +197,57 @@ with Projects:
     - How sound "breathes" inside a space
     These are real wave-physics outputs driven by Green’s Functions, hybrid solvers, and GPU-accelerated rendering.
     Each glowing volume, isosurface, and neon resonance comes directly from the underlying physics.
+    """)
+    st.markdown("## Breakthroughs in Our Physics Engine
+    st.write("""
+    Our diffraction-first acoustics engine has rapidly evolved into a hybrid system capable of handling:
+    - Arbitrary, asymmetric geometry
+    - Ducts, cavities, and obstacles
+    - Real-time GPU-assisted previews
+    - Multi-source volumetric fields
+    - Modal and ray-tracing hybrids
+    - Per-source slice visualization
+    - Interactive parameter controls
+    Our newest release simulates larger rooms, higher resolutions, and denser modal sums, all with smooth, responsive UI.
+    """)
+    st.markdown("## Your Room, Your Model, Your Sound)
+    st.write("""
+    We’re building tools that let anyone “listen to their design” before it exists:
+    1. Upload a 3D model → pick materials → simulate
+    - 3D Green’s Function fields
+    - RT60 and EDC curves
+    - Full impulse responses (IRs)
+    - Spectrograms (dry, wet, convolved audio)
+    - Ray-based path visualizations
+
+    2. or simply record your room on your phone
+    - Clap / sweep → upload WAV → receive:
+    - Per-octave RT60 analysis
+    - Low-frequency problem detection
+    - Auto-suggested acoustic treatments
+    - a 3D modal visualization
+    - a downloadable PDF with BOM + recommendations
+All designed to help consultants, architects, and engineers solve acoustic problems faster.
+
+    """)
+    st.markdown("## Physics + AI = Instant Acoustic Insight")
+    st.write("""
+    We’re also experimenting with Physics-Informed Neural Networks (PINNs) to model 2D and 3D fields instantly, without meshing:
+    - Interactive sliders
+    - Adjustable frequency and damping
+    - Movable seats and sources
+    - Real-time 3D results
+    - Export to VTK or NumPy
+    It’s like a virtual lab: perfect for rapid prototyping, teaching, and design exploration.
+    """)
+    st.markdown("## What’s Next?)
+    st.write("""
+    We’re continuing to expand into:
+    - Computational Fluid Dynamics (CFD)
+    - Multi-room 3D binaural simulations
+    - Advanced audio rendering pipelines
+    - Industry-ready plugins and standalone applications
+    The future of acoustic design is interactive, visual, and physics-accurate, and we’re building it one breakthrough at a time.
     """)
     st.write("For more, see ongoing work on LinkedIn.")
     st.link_button("LinkedIn — @bisdansk", LINKEDIN_URL, use_container_width=False)
