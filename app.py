@@ -138,7 +138,7 @@ with Home:
     - Acoustics & Computational Physics
     From bespoke simulations to full engine integrations, we can adapt our technology to your company, workflow, or product.
     """)
-        if st.button("Contact", type="primary"):
+    if st.button("Contact", type="primary"):
             goto_tab("Contact")
 
     st.divider()
