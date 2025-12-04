@@ -143,10 +143,10 @@ with Home:
 
     st.divider()
 
-    a, b, c = st.columns(3)
-    with a: st.markdown("<div class='card'><h4>Edge DSP + ML</h4><p class='muted'>On‑device RIR → auto‑EQ</p></div>", unsafe_allow_html=True)
-    with b: st.markdown("<div class='card'><h4>TWS + Rechargeable</h4><p class='muted'>Seamless pairing, OTA updates</p></div>", unsafe_allow_html=True)
-    with c: st.markdown("<div class='card'><h4>Verification</h4><p class='muted'>RT60, DRR, C50/C80, A/B audio</p></div>", unsafe_allow_html=True)
+    # a, b, c = st.columns(3)
+    # with a: st.markdown("<div class='card'><h4>Edge DSP + ML</h4><p class='muted'>On‑device RIR → auto‑EQ</p></div>", unsafe_allow_html=True)
+    # with b: st.markdown("<div class='card'><h4>TWS + Rechargeable</h4><p class='muted'>Seamless pairing, OTA updates</p></div>", unsafe_allow_html=True)
+    # with c: st.markdown("<div class='card'><h4>Verification</h4><p class='muted'>RT60, DRR, C50/C80, A/B audio</p></div>", unsafe_allow_html=True)
 
 # ---------------------------
 # ABOUT
