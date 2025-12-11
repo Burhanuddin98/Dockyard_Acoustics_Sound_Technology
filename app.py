@@ -54,15 +54,15 @@ VIDEO_PATH = ASSETS / "hero.mp4"
 PAGE_ICON = str(LOGO_PATH) if LOGO_PATH.exists() else "🔊"
 
 st.set_page_config(page_title=COMPANY_NAME, page_icon=PAGE_ICON, layout="wide")
-st.markdown(
-    f"""
-    <div style="position:relative; top:10px; left:10px;">
-        <img src="{str(LOGO_PATH)}" width="80">
-    </div>
-    """,
-    unsafe_allow_html=True,
-)
-# ---------------------------
+hdr = st.container()
+with hdr:
+    # LEFT aligned (logo then spacer)
+    col_logo, _ = st.columns([1, 9])   # for RIGHT: swap to [9,1] and put image in the second col
+    with col_logo:
+        if LOGO_PATH.exists():
+            st.image(str(LOGO_PATH), width=80)
+        else:
+            st.warning(f"Logo not found: {LOGO_PATH}")# ---------------------------
 # Styles (kept simple to avoid syntax issues)
 # ---------------------------
 BRAND = {
