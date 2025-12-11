@@ -203,7 +203,7 @@ At Dockyard Acoustics, we turn complex physics and acoustics into accessible, po
     with left:
         st.markdown("#### Team")
         st.write("- **Burhanuddin Ibrahim Sakarwala** — Co‑founder & CTO (Acoustics/DSP/ML) · [LinkedIn](%s)" % LINKEDIN_URL)
-        st.write("- **Pedro Correia**  (Engineering/Management) · [LinkedIn](%s)" [LinkedIn](https://www.linkedin.com/in/pedrolcorreia)")
+        st.write("- **Pedro Correia** (Engineering/Management) · [LinkedIn](%s)" % "https://www.linkedin.com/in/pedrolcorreia")
         # st.info("Add your co‑founder here once details are final.")
     with right:
         st.markdown("#### Company & Legal")
