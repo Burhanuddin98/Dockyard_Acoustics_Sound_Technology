@@ -57,7 +57,7 @@ st.set_page_config(page_title=COMPANY_NAME, page_icon=PAGE_ICON, layout="wide")
 st.markdown(
     f"""
     <div style="position:relative; top:10px; left:10px;">
-        <img src="{LOGO_PATH.as_posix()}" width="80">
+        <img src="{str(LOGO_PATH)}" width="80">
     </div>
     """,
     unsafe_allow_html=True,
