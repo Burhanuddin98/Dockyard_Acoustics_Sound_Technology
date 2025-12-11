@@ -53,8 +53,7 @@ LOGO_PATH = ASSETS / "logo.png"  # put your red cat-headphones logo here
 VIDEO_PATH = ASSETS / "hero.mp4"    
 PAGE_ICON = str(LOGO_PATH) if LOGO_PATH.exists() else "🔊"
 
-st.set_page_config(st.image(str(LOGO_PATH), width=80))
-st.set_page_config(page_title=COMPANY_NAME, page_icon=PAGE_ICON, layout="wide")
+st.set_page_config(st.image(str(LOGO_PATH), width=80), page_title=COMPANY_NAME, page_icon=PAGE_ICON, layout="wide")
 
 # ---------------------------
 # Styles (kept simple to avoid syntax issues)
