@@ -54,7 +54,9 @@ VIDEO_PATH = ASSETS / "hero.mp4"
 PAGE_ICON = str(LOGO_PATH) if LOGO_PATH.exists() else "🔊"
 
 st.set_page_config(page_title=COMPANY_NAME, page_icon=PAGE_ICON, layout="wide")
-
+with st.sidebar:
+    st.image(str(LOGO_PATH), width=80)
+    st.markdown("### ")  # small spacing
 # ---------------------------
 # Styles (kept simple to avoid syntax issues)
 # ---------------------------
@@ -201,7 +203,8 @@ At Dockyard Acoustics, we turn complex physics and acoustics into accessible, po
     with left:
         st.markdown("#### Team")
         st.write("- **Burhanuddin Ibrahim Sakarwala** — Co‑founder & CTO (Acoustics/DSP/ML) · [LinkedIn](%s)" % LINKEDIN_URL)
-       # st.info("Add your co‑founder here once details are final.")
+        st.write("- **Pedro Correia**  (Engineering/Management) · [LinkedIn](%s)" [LinkedIn](https://www.linkedin.com/in/pedrolcorreia)")
+        # st.info("Add your co‑founder here once details are final.")
     with right:
         st.markdown("#### Company & Legal")
         st.write(COMPANY_ADDR)
