@@ -26,6 +26,7 @@ CVR_NUMBER     = "45796256"
 
 ASSETS = Path("assets"); ASSETS.mkdir(exist_ok=True)
 LOGO_PATH = ASSETS / "logo.png"  # put your red cat-headphones logo here
+VIDEO_PATH = ASSETS / "hero.mp4"    
 PAGE_ICON = str(LOGO_PATH) if LOGO_PATH.exists() else "🔊"
 
 st.set_page_config(page_title=COMPANY_NAME, page_icon=PAGE_ICON, layout="wide")
@@ -123,6 +124,21 @@ with Home:
     with c1:
         if LOGO_PATH.exists():
             st.image(str(LOGO_PATH), width=130)
+            # --- video under the logo ---
+        if VIDEO_PATH.exists():
+        components.html(
+            f"""
+            <video
+              src="{VIDEO_PATH.as_posix()}"
+              autoplay
+              loop
+              playsinline
+              style="width:100%; border-radius:12px; margin-top:.5rem;"
+            ></video>
+            """,
+            height=180,  # adjust to your clip’s aspect
+        )
+            
     with c2:
         st.markdown("## Dockyard Acoustics Sound Technology")
         st.markdown("<h3 style=\"margin:.1rem 0 .6rem 0\">State of the art Acoustic Simulation Software</h3>", unsafe_allow_html=True)
