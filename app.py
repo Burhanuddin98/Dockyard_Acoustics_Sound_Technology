@@ -261,6 +261,7 @@ with Projects:
 All designed to help consultants, architects, and engineers solve acoustic problems faster.
 
     """)
+    st.image("assets/Screenshot 2025-10-31 121113.png", use_column_width=True)
     st.markdown("#### Physics + AI = Instant Acoustic Insight")
     st.write("""
     We’re also experimenting with Physics-Informed Neural Networks (PINNs) to model 2D and 3D fields instantly, without meshing:
