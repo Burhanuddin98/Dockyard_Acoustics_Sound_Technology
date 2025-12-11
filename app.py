@@ -24,6 +24,20 @@ def video_autoplay_html(path: Path) -> str:
       <source src="data:video/mp4;base64,{data}" type="video/mp4">
     </video>
     """
+def video_teaser_html(path: Path, size_px: int = 130) -> str:
+    data = base64.b64encode(path.read_bytes()).decode()
+    return f"""
+    <div style="
+        width:{size_px}px; height:{size_px}px;
+        border-radius:12px; overflow:hidden;
+        margin-top:.5rem; box-shadow:0 6px 24px rgba(0,0,0,.25);
+    ">
+      <video autoplay muted loop playsinline
+             style="width:100%;height:100%;object-fit:cover;display:block;">
+        <source src="data:video/mp4;base64,{data}" type="video/mp4">
+      </video>
+    </div>
+    """
 # ---------------------------
 # Company config
 # ---------------------------
