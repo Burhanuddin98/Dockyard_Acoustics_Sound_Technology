@@ -151,6 +151,9 @@ with Home:
             # --- video under the logo ---
         if VIDEO_PATH.exists():
             st.markdown(video_autoplay_html(VIDEO_PATH), unsafe_allow_html=True)
+            st.image("assets/Screenshot 2025-11-26 010011.png", use_column_width=True)
+            st.image("assets/WhatsApp Image 2025-09-26 at 17.46.22_06d07261 (1).jpg", use_column_width=True)
+            st.image("assets/WhatsApp Image 2025-11-01 at 03.07.00_f1d49696.jpg", use_column_width=True)
             
     with c2:
         st.markdown("## Dockyard Acoustics Sound Technology")
