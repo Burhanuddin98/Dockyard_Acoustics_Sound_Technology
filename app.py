@@ -228,8 +228,8 @@ with Projects:
     - How sound "breathes" inside a space
     These are real wave-physics outputs driven by Green’s Functions, hybrid solvers, and GPU-accelerated rendering.
     Each glowing volume, isosurface, and neon resonance comes directly from the underlying physics.
-    """)
-    st.image("assets/WhatsApp Image 2025-09-26 at 17.46.22_06d07261.jpg", use_column_width=True)
+    """)    
+    st.image("assets/Screenshot 2025-10-31 121113.png", use_column_width=True)
     st.markdown("#### Breakthroughs in Our Physics Engine")
     st.write("""
     Our diffraction-first acoustics engine has rapidly evolved into a hybrid system capable of handling:
@@ -261,7 +261,7 @@ with Projects:
 All designed to help consultants, architects, and engineers solve acoustic problems faster.
 
     """)
-    st.image("assets/Screenshot 2025-10-31 121113.png", use_column_width=True)
+    st.image("assets/WhatsApp Image 2025-09-26 at 17.46.22_06d07261.jpg", use_column_width=True)
     st.markdown("#### Physics + AI = Instant Acoustic Insight")
     st.write("""
     We’re also experimenting with Physics-Informed Neural Networks (PINNs) to model 2D and 3D fields instantly, without meshing:
