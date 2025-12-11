@@ -229,7 +229,7 @@ with Projects:
     These are real wave-physics outputs driven by Green’s Functions, hybrid solvers, and GPU-accelerated rendering.
     Each glowing volume, isosurface, and neon resonance comes directly from the underlying physics.
     """)
-    st.image("assets/WhatsApp Image 2025-09-26 at 17.46.22_06d07261 (1).jpg", use_column_width=True)
+    st.image("assets/WhatsApp Image 2025-09-26 at 17.46.22_06d07261.jpg", use_column_width=True)
     st.markdown("#### Breakthroughs in Our Physics Engine")
     st.write("""
     Our diffraction-first acoustics engine has rapidly evolved into a hybrid system capable of handling:
