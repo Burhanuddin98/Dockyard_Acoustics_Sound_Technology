@@ -14,6 +14,16 @@ import pandas as pd
 from pathlib import Path
 from datetime import datetime, timezone
 
+import base64
+
+def video_autoplay_html(path: Path) -> str:
+    data = base64.b64encode(path.read_bytes()).decode()
+    return f"""
+    <video autoplay muted loop playsinline
+           style="width:100%; border-radius:12px; margin-top:.5rem;">
+      <source src="data:video/mp4;base64,{data}" type="video/mp4">
+    </video>
+    """
 # ---------------------------
 # Company config
 # ---------------------------
@@ -126,18 +136,7 @@ with Home:
             st.image(str(LOGO_PATH), width=130)
             # --- video under the logo ---
         if VIDEO_PATH.exists():
-            components.html(
-                f"""
-                <video
-                  src="{VIDEO_PATH.as_posix()}"
-                  autoplay
-                  loop
-                  playsinline
-                  style="width:100%; border-radius:12px; margin-top:.5rem;"
-                ></video>
-                """,
-                height=180,  # adjust to your clip’s aspect
-        )
+            st.markdown(video_autoplay_html(VIDEO_PATH), unsafe_allow_html=True)
             
     with c2:
         st.markdown("## Dockyard Acoustics Sound Technology")
