@@ -126,17 +126,17 @@ with Home:
             st.image(str(LOGO_PATH), width=130)
             # --- video under the logo ---
         if VIDEO_PATH.exists():
-        components.html(
-            f"""
-            <video
-              src="{VIDEO_PATH.as_posix()}"
-              autoplay
-              loop
-              playsinline
-              style="width:100%; border-radius:12px; margin-top:.5rem;"
-            ></video>
-            """,
-            height=180,  # adjust to your clip’s aspect
+            components.html(
+                f"""
+                <video
+                  src="{VIDEO_PATH.as_posix()}"
+                  autoplay
+                  loop
+                  playsinline
+                  style="width:100%; border-radius:12px; margin-top:.5rem;"
+                ></video>
+                """,
+                height=180,  # adjust to your clip’s aspect
         )
             
     with c2:
