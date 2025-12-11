@@ -153,8 +153,8 @@ Home, About, Projects, Contact = st.tabs(["Home", "About", "Projects", "Contact"
 with Home:
     c1, c2 = st.columns([1,3])
     with c1:
-        if LOGO_PATH.exists():
-            st.image(str(LOGO_PATH), width=130)
+#        if LOGO_PATH.exists():
+#            st.image(str(LOGO_PATH), width=130)
             # --- video under the logo ---
         if VIDEO_PATH.exists():
             st.markdown(video_autoplay_html(VIDEO_PATH), unsafe_allow_html=True)
