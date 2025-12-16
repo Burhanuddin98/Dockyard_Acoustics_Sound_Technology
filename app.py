@@ -167,7 +167,7 @@ with Home:
         st.write("Dockyard Acoustics is redefining how enthusiasts and professionals shape sound. Our Diffraction-Physics Room Acoustics Engine uses advanced, next-generation physics to deliver acoustic simulations with unprecedented speed, accuracy, and reliability. A all-in-one highly intuitive and portable platform.")
         st.write("We empower architects, acoustic consultants, and engineers to design and optimize acoustic environments with confidence. From early-stage concepts to final design refinement.")
         st.write("Dockyard Acoustics makes powerful acoustic analysis accessible, efficient, and effortless.")
-        st.write("In addition to acoustics, we are expanding our core engine into Computational Fluid Dynamics (CFD) and real-time simulation pipelines. Our technology supports both recurring-license products and high-impact custom projects.
+        st.write("In addition to acoustics, we are expanding our core engine into Computational Fluid Dynamics (CFD) and real-time simulation pipelines. Our technology supports both recurring-license products and high-impact custom projects.")
         st.markdown("### Custom Development & Engineering Expertise")
         st.write("""
         Dockyard Acoustics also provides custom simulation tools and consultancy, combining deep expertise in:
