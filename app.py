@@ -167,6 +167,7 @@ with Home:
         st.write("Dockyard Acoustics is redefining how enthusiasts and professionals shape sound. Our Diffraction-Physics Room Acoustics Engine uses advanced, next-generation physics to deliver acoustic simulations with unprecedented speed, accuracy, and reliability. A all-in-one highly intuitive and portable platform.")
         st.write("We empower architects, acoustic consultants, and engineers to design and optimize acoustic environments with confidence. From early-stage concepts to final design refinement.")
         st.write("Dockyard Acoustics makes powerful acoustic analysis accessible, efficient, and effortless.")
+        st.write("In addition to acoustics, we are expanding our core engine into Computational Fluid Dynamics (CFD) and real-time simulation pipelines. Our technology supports both recurring-license products and high-impact custom projects.
         st.markdown("### Custom Development & Engineering Expertise")
         st.write("""
         Dockyard Acoustics also provides custom simulation tools and consultancy, combining deep expertise in:
@@ -174,7 +175,14 @@ with Home:
         - Structural Engineering
         - Embedded Systems
         - Acoustics & Computational Physics
-        From bespoke simulations to full engine integrations, we can adapt our technology to your company, workflow, or product.
+        From bespoke simulations to entirely new physics engines, we design and implement custom methods of computation, solvers, and real-time pipelines. This includes diffraction-based acoustics, hybrid solvers, and emerging multi-physics systems, specific to your product, workflow, or platform.
+        We build:
+        - Custom physics engines and solvers
+        - New computational methods
+        - GPU-accelerated pipelines
+        - Research-grade tools adapted for industry use
+        
+        Contact us and get your projects brought to life.
         """)
         if st.button("Contact", type="primary"):
             goto_tab("Contact")
@@ -193,9 +201,9 @@ with About:
     st.markdown("### About")
     st.write("""
     Dockyard Acoustics develops advanced simulation technologies designed to bring next-generation accuracy, speed, and usability to acoustic and physical modelling. 
-Our core product is a state-of-the-art Diffraction Physics Engine that enables precise room-acoustic simulation and forms the foundation for future expansion into CFD and broader physics-based applications.
-Beyond software, we offer tailored solutions and consultancy, adapting our engine to specific industry needs or building custom tools for unique challenges. Our interdisciplinary expertise spans Mechanical, Structural, Embedded Systems, and Acoustics Engineering, allowing us to deliver high-performance, science-driven solutions for architects, industry partners, and engineering teams seeking deeper insight and better design outcomes.
-At Dockyard Acoustics, we turn complex physics and acoustics into accessible, powerful tools that elevate engineering workflows and enable better environments one simulation at a time. 
+    Our core product is a state-of-the-art Diffraction Physics Engine that enables precise room-acoustic simulation and forms the foundation for future expansion into CFD and broader physics-based applications. These expansions are designed to support long-term, recurring integrations for industry partners, alongside targeted one-off development projects.
+    Beyond software, we offer tailored solutions and consultancy, adapting our engine to specific industry needs or building custom tools for unique challenges. Our interdisciplinary expertise spans Mechanical, Structural, Embedded Systems, and Acoustics Engineering, allowing us to deliver high-performance, science-driven solutions for architects, industry partners, and engineering teams seeking deeper insight and better design outcomes.
+    At Dockyard Acoustics, we turn complex physics and acoustics into accessible, powerful tools that elevate engineering workflows and enable better environments one simulation at a time. 
     """)
     st.markdown("### Why Dockyard Acoustics")
     st.write("""
@@ -282,8 +290,12 @@ All designed to help consultants, architects, and engineers solve acoustic probl
     """)
     st.markdown("#### What’s Next?")
     st.write("""
-    We’re continuing to expand into:
+    These expansions are designed to support long-term, recurring integrations for industry partners, alongside targeted one-off development projects.
+    Current & Upcoming Development Tracks:
     - Computational Fluid Dynamics (CFD)
+    A high-performance CFD solver designed for continuous integration into engineering workflows and licensed deployments.
+    - Real-Time Acoustics for Game Engines
+    A focused, high-value development track delivering custom real-time acoustics engines for interactive applications and games. These projects are typically one-off, production-ready builds.
     - Multi-room 3D binaural simulations
     - Advanced audio rendering pipelines
     - Industry-ready plugins and standalone applications
@@ -297,6 +309,14 @@ All designed to help consultants, architects, and engineers solve acoustic probl
 # ---------------------------
 with Contact:
     st.markdown("<a name='contact'></a>", unsafe_allow_html=True)
+    st.markdown("### How We Work")
+    st.write("""
+    We engage through two primary models:
+    1. Product & Platform Integration
+    Long-term partnerships using our acoustics and CFD engines as licensed components within your products or workflows.
+    2. Custom Engine Development
+    Custom projects where we design and deliver new simulation systems, solvers, or real-time pipelines tailored to your needs.
+    """)
     st.markdown("### Contact")
     st.write("Tell us about your product or space. We reply within one business day.")
 
@@ -309,9 +329,11 @@ with Contact:
         with col2:
             topic = st.selectbox("Topic", [
                 "Diffraction-Physics Room Acoustics Engine",
+                "CFD engine",
                 "Acoustic simulation",
                 "Audio DSP / ML",
                 "Measurement & QA",
+                "Consultancy",
                 "Other",
             ])
             budget = st.selectbox("Budget", ["< €5k", "€5–20k", "€20–100k", "> €100k", "Not sure"]) 
